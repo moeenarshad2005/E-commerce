@@ -13,6 +13,8 @@ build/
 .claude/
 .env.*
 !.env.example
+scripts/check-stripe.js
+scripts/verify-payment-flow.js
 # Uploaded product images. Generated at runtime and often large — they belong
 # on disk or in object storage, not in the repository. The directory itself is
 # created at boot by src/middleware/upload.middleware.js, so nothing here needs

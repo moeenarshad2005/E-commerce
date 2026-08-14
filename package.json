@@ -14,7 +14,9 @@
     "make:admin": "node scripts/make-admin.js",
     "db:indexes": "node scripts/ensure-indexes.js",
     "money:migrate": "node scripts/migrate-money.js",
-    "test:smoke": "node scripts/smoke-test.js"
+    "test:smoke": "node scripts/smoke-test.js",
+    "check:stripe": "node scripts/check-stripe.js",
+    "verify:payment": "node scripts/verify-payment-flow.js"
   },
   "license": "ISC",
   "dependencies": {
