@@ -1,0 +1,32 @@
+# Stray nested git repo with no real content — kept locally but not tracked.
+E-commerce/
+
+node_modules/
+.env
+.env.local
+*.log
+npm-debug.log*
+.DS_Store
+coverage/
+dist/
+build/
+.claude/
+.env.*
+!.env.example
+# Uploaded product images. Generated at runtime and often large — they belong
+# on disk or in object storage, not in the repository. The directory itself is
+# created at boot by src/middleware/upload.middleware.js, so nothing here needs
+# to be committed to make uploads work on a fresh clone.
+uploads/
+
+# AdminJS rebuilds this bundle on every boot. Committing it means a large,
+# constantly-changing generated file in every diff.
+.adminjs/
+
+# Postman workspace export and local editor metadata — contains request
+# history with embedded API keys/credentials, kept local only.
+postman/
+.postman/
+
+# Created by cleanup.js when it moves removed files aside. Delete it once you
+# are happy the app still runs.
